@@ -17,6 +17,58 @@
     <script src="js/respond.min.js"></script>
     <![endif]-->
     <link rel="shortcut icon" href="images/ico/favicon.ico">
+
+	
+	
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-box-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+</style>
+
+
+	
+	
 </head>
 
 <body id="home">
@@ -162,17 +214,26 @@ box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px
                 <h2 class="section-title wow fadeInDown">Pricing</h2>
                 <p class="wow fadeInDown">Best Most Affordable plans!&nbsp;</p>
             </div>
+		
+		
+		
             <div class="row">
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="wow zoomIn" data-wow-delay="0ms" data-wow-duration="400ms"><br></div>
                 </div>
-                <div class="col-md-3 col-sm-6 col-xs-12">
+		    
+		    
+		    
+                <div class="col-md-3 col-sm-6 col-xs-12 flip-box">
                     <div class="wow zoomIn" data-wow-delay="200ms" data-wow-duration="400ms">
                         <ul class="pricing">
                             <li class="plan-header">
-                                <div class="price-duration"><span class="price">&nbsp;$85&nbsp;</span> <span class="duration">&nbsp;per month&nbsp;</span></div>
-                                <div class="plan-name">Bronze</div>
+                                <div class="price-duration flip-box-inner"><span class="price">&nbsp;$85&nbsp;</span> <span class="duration">&nbsp;per month&nbsp;</span></div>
+                                <div class="plan-name flip-box-front">Bronze</div>
                             </li>
+				<div class="flip-box-back">
+      <h2>Cashapp</h2>
+    </div>
                             <li>1 Nude VC show per<strong style='font-weight: 700; color: rgb(0, 0, 0); font-family: "Times New Roman"; font-size: medium; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;'>&nbsp;month</strong></li>
                             <li>Sexting</li>
                             <li>3 snaps/day (<strong>home</strong>)</li>
@@ -181,6 +242,9 @@ box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px
                         </ul>
                     </div>
                 </div>
+		    
+		    
+		    
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="wow zoomIn" data-wow-delay="400ms" data-wow-duration="400ms">
                         <ul class="pricing featured">
@@ -197,6 +261,9 @@ box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px
                         </ul>
                     </div>
                 </div>
+		    
+		    
+		    
                 <div class="col-md-3 col-sm-6 col-xs-12">
                     <div class="wow zoomIn" data-wow-delay="600ms" data-wow-duration="400ms">
                         <ul class="pricing">
@@ -215,6 +282,9 @@ box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px
                         </ul>
                     </div>
                 </div>
+		    
+		    
+		    
             </div>
         </div>
     </section>
